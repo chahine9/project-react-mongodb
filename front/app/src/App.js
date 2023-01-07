@@ -37,17 +37,17 @@ export default class App extends React.Component {
 
         <Router>
           <Switch>
-          <Route path="/auth" component={ AuthPage } exact/>
-            <Route path="/" component={ HomePage } exact/>
-            <Route path="/create-account" component={ CreateAccountPage } exact/>
-            <Route path="/clients" component={ ClientsPage } exact/>
-            <Route path="/clients/add" component={ AddNewClient } exact/>
-            <Route path="/clients/vehicules/:id" component={ ClientsVehiculesList } exact/>
+            <Route path="/auth" component={ AuthPage } exact/>
+            <Route path="/" component={ HomePage } />
+            <Route path="/create-account" component={ CreateAccountPage } />
+            <Route path="/clients" component={ ClientsPage } />
+            <Route path="/clients/add" component={ AddNewClient } />
+            <Route path="/clients/vehicules/:id" component={ ClientsVehiculesList } />
             
-            <Route path="/clients/vehicules/add/:id" component={ AddNewVehicule } exact/>
-            <Route path="/clients/vehicules/details/:id" component={ VehiculesDetailsPage } exact/>
+            <Route path="/clients/vehicules/add/:id" component={ AddNewVehicule } />
+            <Route path="/clients/vehicules/details/:id" component={ VehiculesDetailsPage } />
             
-            <Route path="/clients/vehicules/intervention/add/:vehicule" component={ AddNewInterventionPage } exact/>
+            <Route path="/clients/vehicules/intervention/add/:vehicule" component={ AddNewInterventionPage } />
             
             
             
